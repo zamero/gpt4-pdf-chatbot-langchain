@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 
 /* Change this to your Pinecone index name. Index name can only contain lowercase letters, numbers, and hyphens. Cannot be more than 45 characters.*/
-export const PINECONE_INDEX_NAME = 'random-topics';
+export const PINECONE_INDEX_NAME = 'demo-data';
 
 /* Change, remove, or add topics here. Any topics listed here will be selectable
  by users in the navigation bar. 
