@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 
 /* Change this to your Pinecone index name. Index name can only contain lowercase letters, numbers, and hyphens. Cannot be more than 45 characters.*/
-export const PINECONE_INDEX_NAME = 'demo-data';
+export const PINECONE_INDEX_NAME = 'the-vault';
 
 /* Change, remove, or add topics here. Any topics listed here will be selectable
  by users in the navigation bar. 
@@ -17,16 +17,11 @@ export const PINECONE_INDEX_NAME = 'demo-data';
  - PROMPT is the placeholder text that is shown in the text box for each topic. */
 export const TOPICS = [
   {
-    TOPIC: 'Life in the Atmosphere of Venus',
-    NAMESPACE: 'venus-atmosphere-life', // MUST ONLY CONTAIN LOWER CASE LETTERS A-Z AND HYPHENS
+    TOPIC: 'programming-gpt',
+    NAMESPACE: 'programming-gpt', // MUST ONLY CONTAIN LOWER CASE LETTERS A-Z AND HYPHENS
     PROMPT:
-      'What evidence is there that life exists in the atmosphere of Venus?',
-  },
-  {
-    TOPIC: 'Supreme Court Cases',
-    NAMESPACE: 'supreme-court-cases', // MUST ONLY CONTAIN LOWER CASE LETTERS A-Z AND HYPHENS
-    PROMPT: 'What precedent was set by Morse v. Frederick?',
-  },
+      'Ask questions',
+  }
 ];
 
 interface PineconeState {

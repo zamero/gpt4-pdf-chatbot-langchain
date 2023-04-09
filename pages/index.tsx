@@ -187,13 +187,13 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <div className="mx-auto flex flex-col gap-4 items-center">
-          <h1 className="text-2xl font-bold leading-[1.1] tracking-tighter text-center">
+        <div className="mx-auto flex no-scrollbar flex-col bg-gray-900 text-gray-200 gap-4 items-center">
+          <h1 className="text-2xl font-bold pt-5 scrollbar scrollbar-thumb-gray-900 scrollbar-track-gray-100 leading-[1.1] tracking-tighter text-center">
             Chat About {currentTopic}
           </h1>
           <main className={styles.main}>
             <div className={styles.cloud}>
-              <div ref={messageListRef} className={styles.messagelist}>
+              <div ref={messageListRef} className={`${styles.messagelist} scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar-thin scrollbar-thumb-gray-800 scrollbar-track-gray-900 overflow-y-scroll dark:scrollbar-thumb-gray-200 dark:scrollbar-track-gray-900 border-b-slate-600`}>
                 {chatMessages.map((message, index) => {
                   let icon;
                   let className;
@@ -237,7 +237,7 @@ export default function Home() {
                         </div>
                       </div>
                       {message.sourceDocs && (
-                        <div className="p-5">
+                        <div className={`${styles.usermessage} p-5 bg-gray-900`}>
                           <Accordion
                             type="single"
                             collapsible

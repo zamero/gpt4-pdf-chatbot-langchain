@@ -1,3 +1,4 @@
+
 .main {
   display: flex;
   flex-direction: column;
@@ -24,10 +25,9 @@
   font-size: 1.1rem;
   padding: 1rem 2rem 1rem 2rem;
   width: 75vw;
-  border-radius: 0.5rem;
-  border: 1px solid #d9d9e3;
-  background: #ffffff;
-  color: #000;
+  border: 1px solid #484654;
+  background: #21252b;
+  color: #ececec;
   outline: none;
 }
 
@@ -37,7 +37,7 @@
 
 .textarea:focus {
   outline: none;
-  border-color: #6b7280;
+  border-color: #202020;
   box-shadow: 0 0 0 3px rgba(156, 163, 175, 0.5);
 }
 
@@ -83,8 +83,7 @@
 .messagelist {
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
-  border-radius: 0.5rem;
+  background-color: #21252b;
 }
 
 .messagelistloading {
@@ -95,14 +94,14 @@
 }
 
 .usermessage {
-  background: #ffffff;
+  background: #21242a;
   padding: 1.5rem;
-  color: #000;
+  color: hwb(0 89% 11%);
 }
 
 .usermessagewaiting {
   padding: 1.5rem;
-  color: #000;
+  color: #ececec;
   background: linear-gradient(to left, #07080938, #1a1c2024, #07080936);
   background-size: 200% 200%;
   background-position: -100% 0;
@@ -121,9 +120,9 @@
 }
 
 .apimessage {
-  background: #f9fafb;
+  background: #1e2126;
   padding: 1.5rem;
-  color: #000;
+  color: #ececec;
   animation: fadein 0.5s;
 }
 
@@ -192,8 +191,7 @@
   width: 75vw;
   height: 65vh;
   background: #ffffff;
-  border-radius: 0.5rem;
-  border: 1px solid #d9d9e3;
+  border: 1px solid #757575;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -260,3 +258,4 @@
     text-align: center;
   }
 }
+

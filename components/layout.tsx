@@ -6,9 +6,9 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className="mx-auto flex flex-col space-y-4 items-center">
-      <header className="sticky top-0 z-40 bg-white w-full">
-        <div className="h-16 border-b border-b-slate-200 py-4">
+    <div className="mx-auto flex flex-col bg-gray-900 space-y-4 items-center">
+      <header className="sticky top-0 z-40 bg-gray-900 text-gray-200 w-full">
+        <div className="h-16 border-b border-b-slate-600 py-4">
           <nav className="flex items-center">
             <div className="w-full mx-auto">
               <TopicDropdown />
@@ -16,7 +16,7 @@ export default function Layout({ children }: LayoutProps) {
           </nav>
         </div>
       </header>
-      <main className="flex w-full flex-1 flex-col overflow-hidden">
+      <main className="flex w-full flex-1 flex-col overflow-hidden text-white bg-gray-900">
         {children}
       </main>
     </div>
